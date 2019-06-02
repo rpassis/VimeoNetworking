@@ -1,6 +1,0 @@
-framework module VimeoTestsSupport {
-  umbrella header "VimeoTestsSupport-tvOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

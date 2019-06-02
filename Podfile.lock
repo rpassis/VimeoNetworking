@@ -60,7 +60,7 @@ SPEC CHECKSUMS:
   SnapshotTesting: d4bd40afcf104af96bce7b84f98084fdd817396a
   SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   VimeoNetworking: 903b247d7064132815bb6b87680b22267cb5b756
-  VimeoTestsSupport: 0cb6a8dffa14b6d2053b1178ba07e159f4ffe05e
+  VimeoTestsSupport: 68e199952e153b00a8f5d02343d6200b5decbd39
 
 PODFILE CHECKSUM: b3760c2743311af23edfe292c84eea62a9d2eded
 
