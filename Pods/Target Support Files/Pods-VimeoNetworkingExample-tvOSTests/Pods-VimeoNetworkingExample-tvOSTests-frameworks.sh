@@ -144,9 +144,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/OHHTTPStubs-tvOS/OHHTTPStubs.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VimeoTestsSupport-tvOS/VimeoTestsSupport.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/OHHTTPStubs-tvOS/OHHTTPStubs.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VimeoTestsSupport-tvOS/VimeoTestsSupport.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

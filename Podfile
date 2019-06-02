@@ -16,6 +16,7 @@ target 'VimeoNetworkingExample-iOS' do
     target 'VimeoNetworkingExample-iOSTests' do
     	inherit! :search_paths
         pod 'OHHTTPStubs/Swift', '6.0.0'
+        pod 'VimeoTestsSupport', :path => '../VimeoTestsSupport'
 	end
 end
 
@@ -26,5 +27,6 @@ target 'VimeoNetworkingExample-tvOS' do
     target 'VimeoNetworkingExample-tvOSTests' do
     	inherit! :search_paths
         pod 'OHHTTPStubs/Swift', '6.0.0'
+        pod 'VimeoTestsSupport', :path => '../VimeoTestsSupport'
 	end
 end

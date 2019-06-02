@@ -1,0 +1,35 @@
+{
+  "name": "VimeoTestsSupport",
+  "version": "1.0.0",
+  "summary": "VimeoTestsSupport",
+  "homepage": "https://github.com/RogeriodePaulaAssis/VimeoTestsSupport",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Rogerio de Paula Assis": "rogerio@vimeo.com"
+  },
+  "source": {
+    "git": "https://github.com/RogeriodePaulaAssis/VimeoTestsSupport.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "tvos": "9.0",
+    "watchos": "2.0",
+    "osx": "10.10"
+  },
+  "source_files": "Sources/**/*",
+  "resources": "Resources/**/*",
+  "frameworks": "Foundation",
+  "weak_frameworks": "XCTest",
+  "compiler_flags": "-DPRODUCT_NAME=VimeoTestsSupport/VimeoTestsSupport",
+  "pod_target_xcconfig": {
+    "APPLICATION_EXTENSION_API_ONLY": "YES",
+    "ENABLE_BITCODE": "NO",
+    "OTHER_LDFLAGS": "$(inherited) -weak-lswiftXCTest -Xlinker -no_application_extension",
+    "OTHER_SWIFT_FLAGS": "$(inherited) -suppress-warnings",
+    "FRAMEWORK_SEARCH_PATHS": "$(inherited) \"$(PLATFORM_DIR)/Developer/Library/Frameworks\""
+  }
+}
