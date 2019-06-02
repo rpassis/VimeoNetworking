@@ -1,0 +1,13 @@
+▿ Optional<Set<AnyHashable>>
+  ▿ some: 11 members
+    - "connections"
+    - "interactions"
+    - "isTopLevel"
+    - "link"
+    - "metadata"
+    - "modifiedTime"
+    - "name"
+    - "pictureCollection"
+    - "subcategories"
+    - "topLevel"
+    - "uri"

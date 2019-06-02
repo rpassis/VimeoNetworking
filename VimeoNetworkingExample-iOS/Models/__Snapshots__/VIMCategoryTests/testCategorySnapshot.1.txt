@@ -1,0 +1,2 @@
+▿ Optional<VIMCategory>
+  - some: <VIMCategory>

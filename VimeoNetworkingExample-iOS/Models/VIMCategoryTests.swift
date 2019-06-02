@@ -8,14 +8,14 @@
 
 import XCTest
 import VimeoTestsSupport
+import SnapshotTesting
 
 @testable import VimeoNetworking
 
 class VIMCategoryTests: XCTestCase {
     
-    
-    var category: VIMCategory!
     let payload = PayloadFactory.category.json as! [AnyHashable: Any]
+    var category: VIMCategory!
     
     override func setUp() {
         category = VIMCategory(keyValueDictionary: payload)
@@ -24,9 +24,9 @@ class VIMCategoryTests: XCTestCase {
     override func tearDown() {
     }
     
-    func test_Category_Properties() {
+    func testCategoryPropertiesSnapshot() {
         let properties = VIMCategory.propertyKeys()
-        XCTAssertEqual(properties?.count, 11)
+        assertSnapshot(matching: properties, as: .dump)
     }
     
     func testJSONParsing() {
