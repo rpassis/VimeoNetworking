@@ -27,6 +27,8 @@
 import Foundation
 import AFNetworking
 
+let password = "ABCDE12345"
+
 /// Describes how a request should handle retrying after failure
 public enum RetryPolicy {
         /// Only one attempt is made, no retry behavior
