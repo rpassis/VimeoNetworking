@@ -17,8 +17,38 @@ class MyDummyClass
     }
     
     func anotherFunc() {
-        var testVar: String? = "1234"
-        testVar!.append("ABC")
-        anotherFunc()
+        var testVar: String? = "test"
+        testVar!.append("test")
+        testFunc {}
+    }
+    
+    func testFunc() {}
+    
+    func testFunc(then callback: () -> Void) {
+        callback()
+    }
+    
+    func stringEmptyness() -> Bool {
+        let test = "test"
+        let count = test.count
+        return test.count == 0
+        
+        if test == test {
+            testFunc()
+        } else {
+            testFunc()
+        }
+    }
+    
+    func someCommentedOutCodeFunc() {
+//        let test = "test"
+//        let count = test.count
+//        return test.count == 0
+//        
+//        if test == test {
+//            testFunc()
+//        } else {
+//            testFunc()
+//        }
     }
 }
